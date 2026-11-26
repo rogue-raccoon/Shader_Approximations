@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bb2413dc0135a42b51e792bfa305f2, type: 3}
+  m_Name: PRISM_T0-T4_ImageCapture
+  m_EditorClassIdentifier: Assembly-CSharp::Thesis.Glass.Study.StudyRunSettings
+  mode: 1
+  startAutomatically: 1
+  requireHeadset: 1
+  startupDelaySeconds: 5
+  startupTimeoutSeconds: 30
+  conditions:
+  - {fileID: 2100000, guid: 22398d623275e06459d09c57ef89779e, type: 2}
+  - {fileID: 2100000, guid: d095bfb6d4b0b9b468e1136ea66efdb0, type: 2}
+  - {fileID: 2100000, guid: aa5c62e7cd866494dbc51a01406a68a2, type: 2}
+  - {fileID: 2100000, guid: ea7ca36f15878024aa4320a93f60b78f, type: 2}
+  - {fileID: 2100000, guid: 9fe46bc692e5f124cbe9c4c71fd19d76, type: 2}
+  paths: 000000000100000002000000
+  blocks: 1
+  warmupFrames: 120
+  cooldownSeconds: 60
+  pathDurationSeconds: 10
+  performanceCycles: 2
+  minimumPerformanceSamples: 1000
+  imagePositions: 5
+  imageSettleFrames: 4
+  captureTimeoutSeconds: 60
+  translationMetres: 0.5
+  yawDegrees: 50
+  captureNoGlassBaseline: 0
+  toggleOpaqueTexturePerCondition: 1
+  disablePostProcessing: 1
+  disableFoveation: 1
+  compensateTrackedCentre: 1
+  flipReadbackRows: 0

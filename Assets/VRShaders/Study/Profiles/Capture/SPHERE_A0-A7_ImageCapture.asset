@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bb2413dc0135a42b51e792bfa305f2, type: 3}
+  m_Name: SPHERE_A0-A7_ImageCapture
+  m_EditorClassIdentifier: Assembly-CSharp::Thesis.Glass.Study.StudyRunSettings
+  mode: 1
+  startAutomatically: 1
+  requireHeadset: 1
+  startupDelaySeconds: 5
+  startupTimeoutSeconds: 30
+  conditions:
+  - {fileID: 2100000, guid: 9c42dd8d93feb5448999d66577187780, type: 2}
+  - {fileID: 2100000, guid: f878b2b85c5eafb46beba820d37f2c76, type: 2}
+  - {fileID: 2100000, guid: 0197b3350301f604d9f5bdb144a14ab9, type: 2}
+  - {fileID: 2100000, guid: 22a53d677e8333c44b7ad01353cf5ad5, type: 2}
+  - {fileID: 2100000, guid: fac29acf84eb42b40910875b01f5fff0, type: 2}
+  - {fileID: 2100000, guid: 022c13d461d0cf940b8af56c4110848c, type: 2}
+  - {fileID: 2100000, guid: 8e81edc72f754d849b6b41c0ba4f9e4f, type: 2}
+  paths: 0200000001000000
+  blocks: 1
+  warmupFrames: 120
+  cooldownSeconds: 10
+  pathDurationSeconds: 10
+  performanceCycles: 2
+  minimumPerformanceSamples: 1000
+  imagePositions: 5
+  imageSettleFrames: 4
+  captureTimeoutSeconds: 60
+  translationMetres: 0.5
+  yawDegrees: 50
+  captureNoGlassBaseline: 0
+  toggleOpaqueTexturePerCondition: 1
+  disablePostProcessing: 1
+  disableFoveation: 1
+  compensateTrackedCentre: 1
+  flipReadbackRows: 0

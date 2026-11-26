@@ -1,0 +1,22 @@
+#pragma kernel CopyArray
+#pragma kernel Copy2D
+
+Texture2DArray<float4> _SourceArray;
+Texture2D<float4> _Source2D;
+RWTexture2DArray<float4> _DestinationArray;
+RWTexture2D<float4> _Destination2D;
+int _Width, _Height, _Slices;
+
+[numthreads(8, 8, 1)]
+void CopyArray(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x < (uint)_Width && id.y < (uint)_Height && id.z < (uint)_Slices)
+        _DestinationArray[id] = _SourceArray.Load(int4(id, 0));
+}
+
+[numthreads(8, 8, 1)]
+void Copy2D(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x < (uint)_Width && id.y < (uint)_Height)
+        _Destination2D[id.xy] = _Source2D.Load(int3(id.xy, 0));
+}
